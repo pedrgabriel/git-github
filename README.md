@@ -1,3 +1,7 @@
-# git-github
+# Desafio de Projeto sobre Git/GitHub da Digital Innovation One
 
-Desafio de projeto sobre Git/GitHub
+Repositório criado para a realização do desafio de projeto proposto pela Digital Innovation One (DIO)
+
+## Links Úteis
+
+[Guia de uso para manipulação de arquivos Markdown (.md)](https://www.markdownguide.org/)
