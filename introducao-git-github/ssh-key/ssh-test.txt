@@ -1,0 +1,23 @@
+Passo a passo de como gerar uma nova chave SSH:
+
+1. Use o comando a seguir no GitBash: $ssh-keygen -t ed25519 -C "seu_email@exemplo.com";
+
+2. Insira uma senha para sua chave SSH;
+
+3. Vá para o diretório onde foi criada a chave utilizando os comandos necessários;
+
+4. Liste os arquivos da pasta (note que um dos arquivos tem a extensão .pub, indicando assim que este arquivo contém a chave SSH pública);
+
+5. Visualize o conteúdo do arquivo utilizando o comando: $ cat id_ed25519.pub (chave pública);
+
+6. Copie o conteúdo do arquivo id_ed25519.pub e cole no seguinte caminho: Settings > SSH and GPG Keys > New SSH key > Key;
+
+7. Insira o comando a seguir para inicializar o ssh-agent: $ eval $(ssh-agent -s);
+
+8. Insira o comando a seguir para adicionar a chave SSH ao ssh-agent: $ ssh-add id_ed25519 (chave privada);
+
+9. Informe a senha que foi criada anteriormente para que sua chave SSH seja adicionada corretamente;
+
+10. Por fim, para testar sua chave SSH, vá ao GitHub e copie o caminho SSH para clonar um repositório, utilizando o seguinte comando: $ git clone git@github.com:exemplo/exemplo.git.
+
+Fonte: https://docs.github.com/pt/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
